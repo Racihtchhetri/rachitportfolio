@@ -48,10 +48,10 @@ toggler.addEventListener('click', () => {
 showToggler.addEventListener('click', () => {
     const cards = document.querySelectorAll('.card');
     const totalCards = cards.length;
-    const lastTwoCards = totalCards - 2;
+    const lastFourCards = totalCards - 4;
 
-    for (let i = totalCards - 1; i >= lastTwoCards; i--) {
-        cards[i].style.display = 'none'; // Hide the last two cards
+    for (let i = totalCards - 1; i >= lastFourCards; i--) {
+        cards[i].style.display = 'none';
     }
 
     toggler.style.display = 'block'; // Show "See more" button
